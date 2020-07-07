@@ -16,8 +16,8 @@ led on the ESP32 will blink each second while receiving GPS output.
 The ESP32 outputs the current time and date whenever a valid
 $GPRMC line is received.  Using the host software below,
 this data is then converted back into a valid NMEA $GPRMC line.
-Both time and date must be sent for gpsd to recognized the
-new line as valid PPS data.
+Both time and date must be sent before gpsd will recognize
+it as valid PPS data.
 
 ### Software
 
