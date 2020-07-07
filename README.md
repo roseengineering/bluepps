@@ -2,6 +2,13 @@
 
 # Bluetooth BLE PPS Service using a ESP32, a GPS Module and Micropython
 
+Do you need a GPS time standard but do not like having it
+tethered to your laptop or desktop using USB.
+Maybe you are inside but do not have an outdoor GPS antenna.
+Maybe your operation location is not conductive to GPS reception.
+
+Why not connect your GPS to you computer using bluetooth BLE instead?
+
 This repo contains a BLE implementation of a GPS PPS device
 in Micropython.  Specifically, the code is designed to be run
 on a ESP32 microcontroller with Micropython ESP-IDF v4.x firmware 
