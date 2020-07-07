@@ -50,7 +50,7 @@ To send the same NMEA line over a udp socket instead use
 
 ### Using with GPSD 
 
-To listen to either of tcp or udp services using gpsd and chrony,
+To listen to either of the tcp or udp services using gpsd and chrony
 add the following line to /etc/chrony/chrony.conf.
 
 ```
