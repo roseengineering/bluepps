@@ -1,6 +1,6 @@
 
 
-# Bluetooth BLE PPS Service using a ESP32 and Micropython
+# Bluetooth BLE PPS Service using a ESP32, a GPS Module and Micropython
 
 This repo contains a BLE implementation of a GPS PPS device
 in Micropython.  Specifically, the code is designed to be run
