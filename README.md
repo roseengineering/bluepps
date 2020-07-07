@@ -6,7 +6,7 @@ Do you need a GPS time standard but do not like having your GPS device
 tethered to your laptop or desktop using USB?
 Maybe you are inside but do not have an outdoor GPS antenna.
 Maybe your operating location is not conductive to GPS reception
-but are unable move your GPS device far away because of USB.
+but are unable move your GPS device far away enough because of USB.
 
 Why not connect your GPS module to your computer over bluetooth BLE instead?
 This repo does just this.  It contains a BLE implementation of a GPS PPS device
