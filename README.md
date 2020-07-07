@@ -67,13 +67,13 @@ The code client.py converts this data into a valid NMEA $GPRMC output line.
 Both time and date must be sent otherwise gpsd will not recognize
 the NMEA line as valid PPS data.
 
-To send this NMEA line over a tcp socket instead the console
-run "python3 tcpsource.py".  This code creates a local tcp socket server
-on port 8888.  You can connect to it using "nc -d localhost 8888".
-To send the same NMEA line over a udp socket instead use
+To send this NMEA line over a tcp socket instead of to the console
+run "python3 tcpsource.py".  tcpsource.py creates a local tcp socket server
+on port 8888.  Connect to it using "nc -d localhost 8888".
+To send the same NMEA line over a udp socket use
 "python3 updsource.py"
 
-### Using with GPSD 
+### Interfacing Bluepps with Gpsd and Chrony
 
 To listen to either of the tcp or udp services using gpsd and chrony
 add the following line to /etc/chrony/chrony.conf.
