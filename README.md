@@ -5,7 +5,8 @@
 Do you need a GPS time standard but do not like having it
 tethered to your laptop or desktop using USB.
 Maybe you are inside but do not have an outdoor GPS antenna.
-Maybe your operation location is not conductive to GPS reception.
+Maybe your operating location is not conductive to GPS reception
+but are unable move your GPS device far away enough.
 
 Why not connect your GPS to you computer using bluetooth BLE instead?
 
