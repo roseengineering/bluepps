@@ -22,7 +22,6 @@ it as valid PPS data.
 ### Software
 
 First install the library bluepy using pip.
-
 Next modify the client.py code with the BLE mac address of your ESP32.
 You can use nRF Connect App to find this mac address.  The device
 will be named "bluepps".   Another option is to use
@@ -36,11 +35,11 @@ No data will be sent from the ESP32 until valid time NMEA data
 is received from the GPS satellites.  Client.py converts
 this data into a valid NMEA $GPRMC output line.
 
-To send this NMEA line using a tcp socket instead of the console
-run "python3 tcpsource.py".  This code creates a local tcp socket
-at port 8888.  Listen to using "nc -d localhost 8888".
-
-To send the NMEA line to a udp socket run "python3 updsource.py"
+To send this NMEA line over a tcp socket instead the console
+run "python3 tcpsource.py".  This code creates a local tcp socket server
+on port 8888.  You can connect to it using "nc -d localhost 8888".
+To send the same NMEA line over a udp socket instead use
+"python3 updsource.py"
 
 ### Using with GPSD 
 
