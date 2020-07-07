@@ -86,7 +86,7 @@ Next run gpsd using the option "-n" and add the devices
 "tcp://127.0.0.1:8888" or "udp://127.0.0.1:5005" for gpsd to use.
 I recommend using the udpsource.py server.
 
-For example, I used the following command to debug chrony and gpsd:
+To debug interfacing bluepps with gpsd I used:
 
 ```bash
 sudo gpsd -D6 -n -N -b tcp://localhost:8888
