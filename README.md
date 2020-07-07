@@ -37,9 +37,8 @@ the included code scan.py to find the mac address.  Run it using
 
 To watch the PPS output from your console run "python3 client.py".
 No data will be sent from the ESP32 until a valid NMEA line 
-with the current time and date is received from the GPS satellites.  
-Client.py converts
-this data into a valid NMEA $GPRMC output line.
+with the current time and date is received from the GPS satellites.
+The code client.py converts this data into a valid NMEA $GPRMC output line.
 Both time and date must be sent otherwise gpsd will not recognize
 the NMEA line as valid PPS data.
 
