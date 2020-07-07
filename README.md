@@ -2,7 +2,7 @@
 
 # Bluetooth BLE PPS Service using a ESP32, a GPS Module and Micropython
 
-Do you need a GPS time standard but do not like having it
+Do you need a GPS time standard but do not like having your GPS device
 tethered to your laptop or desktop using USB.
 Maybe you are inside but do not have an outdoor GPS antenna.
 Maybe your operating location is not conductive to GPS reception
