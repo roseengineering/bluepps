@@ -64,8 +64,8 @@ To watch the PPS output from your console run "python3 client.py".
 No data will be sent from the ESP32 until a valid NMEA line 
 with the current time and date is received from the GPS satellites.
 The code client.py converts this data into a valid NMEA $GPRMC output line.
-Both time and date must be sent otherwise gpsd will not recognize
-the NMEA line as valid PPS data.
+Both time and date must be used otherwise gpsd will not recognize
+the recreated NMEA line as valid PPS data.
 
 To send this NMEA line over a tcp socket instead of to the console
 run "python3 tcpsource.py".  tcpsource.py creates a local tcp socket server
