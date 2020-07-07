@@ -90,7 +90,6 @@ To debug interfacing bluepps with gpsd I used:
 
 ```bash
 sudo gpsd -D6 -n -N -b tcp://localhost:8888
--- or --
 sudo gpsd -D6 -n -N -b udp://127.0.0.1:5005
 ```
 
