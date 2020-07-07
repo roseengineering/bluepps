@@ -23,8 +23,6 @@ led on the ESP32 will blink each second while receiving GPS output.
 The ESP32 outputs the current time and date whenever a valid
 $GPRMC line is received.  Using the host software below,
 this data is then converted back into a valid NMEA $GPRMC line.
-Both time and date must be sent before gpsd will recognize
-it as valid PPS data.
 
 ### Software
 
@@ -38,9 +36,12 @@ the included code scan.py to find the mac address.  Run it using
 ### Simple Example
 
 To watch the PPS output from your console run "python3 client.py".
-No data will be sent from the ESP32 until valid time NMEA data
-is received from the GPS satellites.  Client.py converts
+No data will be sent from the ESP32 until a valid NMEA line 
+with the current time and date is received from the GPS satellites.  
+Client.py converts
 this data into a valid NMEA $GPRMC output line.
+Both time and date must be sent otherwise gpsd will not recognize
+the NMEA line as valid PPS data.
 
 To send this NMEA line over a tcp socket instead the console
 run "python3 tcpsource.py".  This code creates a local tcp socket server
