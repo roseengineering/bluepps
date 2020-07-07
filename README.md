@@ -24,6 +24,31 @@ The ESP32 outputs the current time and date whenever a valid
 $GPRMC line is received.  Using the host software below,
 this data is then converted back into a valid NMEA $GPRMC line.
 
+While bluepps.py runs, it writes all $GPRMC lines
+received from the GPS module to the micropython repl console:
+
+```
+> b'$GPRMC,021953.00,V,,,,,,,070720,,,N*73'
+> b'$GPRMC,021954.00,V,,,,,,,070720,,,N*74'
+> b'$GPRMC,021955.00,V,,,,,,,070720,,,N*75'
+> b'$GPRMC,021956.00,V,,,,,,,070720,,,N*76'
+> b'$GPRMC,021957.00,V,,,,,,,070720,,,N*77'
+> b'$GPRMC,021958.00,V,,,,,,,070720,,,N*78'
+> b'$GPRMC,021959.00,V,,,,,,,070720,,,N*79'
+> b'$GPRMC,022000.00,V,,,,,,,070720,,,N*7F'
+> b'$GPRMC,022001.00,V,,,,,,,070720,,,N*7E'
+> b'$GPRMC,022002.02,V,,,,,,,070720,,,N*7F'
+> b'$GPRMC,022003.00,V,,,,,,,070720,,,N*7C'
+> b'$GPRMC,022004.00,V,,,,,,,070720,,,N*7B'
+> b'$GPRMC,022005.00,V,,,,,,,070720,,,N*7A'
+> b'$GPRMC,022006.00,V,,,,,,,070720,,,N*79'
+> b'$GPRMC,022007.00,V,,,,,,,070720,,,N*78'
+> b'$GPRMC,022008.00,V,,,,,,,070720,,,N*77'
+> b'$GPRMC,022009.00,V,,,,,,,070720,,,N*76'
+> b'$GPRMC,022010.00,V,,,,,,,070720,,,N*7E'
+> b'$GPRMC,022011.00,V,,,,,,,070720,,,N*7F'
+```
+
 ### Software
 
 First install the library bluepy using pip.
