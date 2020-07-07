@@ -16,7 +16,7 @@ for BLE support.
 
 ### Hardware
 
-First connect your ESP32 to a GPS sensor using one of the UART ports.
+First connect your ESP32 to a GPS module using one of the UART ports.
 The code uses Uart 2.  Next copy bluepps.py to the ESP32.  The blue
 led on the ESP32 will blink each second while receiving GPS output.
 
