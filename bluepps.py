@@ -84,7 +84,8 @@ class BLEUART:
         self._ble.gap_advertise(interval_us, adv_data=self._payload)
 
     def write(self, data):
-        for conn_handle in self._connections:
+        self._ble.gatts_write(self._tx_handle, data)  # FLAG_READ
+        for conn_handle in self._connections:         # FLAG_NOTIFY
             self._ble.gatts_notify(conn_handle, self._tx_handle, data)
             print(' ', data)
 
